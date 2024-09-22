@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-family: 'Inclusive Sans', sans-serif;
-    background: linear-gradient(70deg, blue, purple, pink);
+    background: url(../ella.jpg) no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -24,7 +25,13 @@ canvas {
     height: 100vh;
     margin: 0;
 }
+.titulo, .texto {
+    color:#f9f9f9;
 
+}
+.texto{
+    margin: 0 15px;
+}
 .Con {
     display: flex;
     place-content: center;
@@ -111,7 +118,16 @@ canvas {
 
 @media (max-width: 468px) {
     body {
-        background: linear-gradient(100deg, blue, purple, pink);
+        background: url(../ella.jpg) no-repeat;
+        background-position-x: center;
 
+    }
+    .alert{
+        display: flex;
+        justify-content: center;
+    }
+    .Contenedor{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
